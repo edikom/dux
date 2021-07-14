@@ -1,0 +1,31 @@
+.ais-SearchBox {
+  margin: 1em 0;
+}
+
+.right-panel {
+  margin-left: 0px;
+  width: 100%
+}
+
+.ais-InstantSearch {
+  max-width: none;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ais-Hits-item {
+  margin-bottom: 1em;
+  width: calc(25% - 1rem);
+}
+
+.ais-Hits-item img {
+  margin-right: 1em;
+}
+
+.hit-name {
+  margin-bottom: 0.5em;
+}
+
+.hit-image {
+  max-height: 100px
+}
