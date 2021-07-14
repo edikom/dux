@@ -704,17 +704,6 @@ a[class^="ais-"] {
     display: block;
     position: relative;
 }
-.ais-SearchBox-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding: 0.3rem 1.7rem;
-    width: 100%;
-    position: relative;
-    background-color: #fff;
-    border: 1px solid #c4c8d8;
-    border-radius: 5px;
-}
 .ais-SearchBox-input::-webkit-input-placeholder {
     color: #a5aed1;
 }
