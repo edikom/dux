@@ -1,3 +1,14 @@
+.ais-SearchBox-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0.3rem 1.7rem;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #c4c8d8;
+    border-radius: 5px;
+}
 .ais-Breadcrumb-list,
 .ais-CurrentRefinements-list,
 .ais-HierarchicalMenu-list,
