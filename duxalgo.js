@@ -1,8 +1,8 @@
 /* global instantsearch algoliasearch */
 
 const search = instantsearch({
-  indexName: 'demo_ecommerce',
-  searchClient: algoliasearch('B1G2GM9NG0', 'aadef574be1f9252bb48d4ea09b5cfe5'),
+  indexName: 'Produits DUX',
+  searchClient: algoliasearch('HAHKE34ZA2', '0795798992f6e09f780d0ad5d42bff87'),
 });
 
 search.addWidgets([
@@ -14,21 +14,19 @@ search.addWidgets([
   }),
   instantsearch.widgets.refinementList({
     container: '#brand-list',
-    attribute: 'brand',
+    attribute: 'Product Categories',
   }),
   instantsearch.widgets.hits({
     container: '#hits',
     templates: {
       item: `
-        <div>
-          <img src="{{image}}" align="left" alt="{{name}}" />
+        <div><a href="https://mouvementdux.com/product/{{Product Handle}}">
+          <img class="hit-image" src="{{Main Variant Image}}" align="left" alt="{{Product Name}}" />
           <div class="hit-name">
-            {{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}
+            {{#helpers.highlight}}{ "attribute": "Product Name" }{{/helpers.highlight}}
           </div>
-          <div class="hit-description">
-            {{#helpers.highlight}}{ "attribute": "description" }{{/helpers.highlight}}
-          </div>
-          <div class="hit-price">\${{price}}</div>
+          <div class="hit-price">\${{Variant Price}}</div>
+          </a>
         </div>
       `,
     },
